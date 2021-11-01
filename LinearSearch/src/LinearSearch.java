@@ -14,7 +14,7 @@ public class LinearSearch {
 
     public static void main(String[] args) {
         //重写了student的equals方法，才能进行泛型的比较
-        Student[] students = {new Student("1"), new Student("2"),new Student("3")};
+        Student[] students = {new Student("1",1), new Student("2"),new Student("3")};
         System.out.println(LinearSearch.search(students,new Student("2")));
     }
 }
