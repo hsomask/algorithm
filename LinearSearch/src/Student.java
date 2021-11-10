@@ -1,4 +1,5 @@
 import java.util.Objects;
+import java.util.Stack;
 
 public class Student implements Comparable<Student> {
 
@@ -47,4 +48,8 @@ public class Student implements Comparable<Student> {
     public String toString() {
         return String.format("Student(name : %s ,score :%d)", this.name, this.score);
     }
+
+
+
+    Stack<Integer> stack=new Stack<>();
 }
