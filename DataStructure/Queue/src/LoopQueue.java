@@ -91,4 +91,20 @@ public class LoopQueue<E> implements Queue<E> {
             throw new IllegalArgumentException("the queue is empty");
         return data[front];
     }
+
+    @Override
+    public String toString() {
+        StringBuilder s = new StringBuilder();
+        s.append(String.format("Queue: size =%d,capacity=%d \n"), size, getCapacity());
+        s.append(" front [");
+        for (int i = front; i != tail; i = (i + 1) % data.length) {
+            s.append(data[i]);
+            if ((i + 1) % data.length != tail)
+                s.append(", ");
+        }
+        s.append("] tail");
+
+
+        return s.toString();
+    }
 }
