@@ -1,5 +1,6 @@
 /**
  * *动态栈
+ * 用动态数组实现栈
  */
 public class ArrayStack<E> implements Stack<E> {
 
